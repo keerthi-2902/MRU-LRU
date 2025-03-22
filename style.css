@@ -1,0 +1,180 @@
+/* General Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background-color: #f4f4f9; /* Subtle off-white background */
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container Styling */
+.container {
+    width: 90%;
+    max-width: 700px;
+    margin: 5% auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+    border: 1px solid #ddd; /* Light border for separation */
+}
+
+/* Title Styling */
+h1 {
+    color: #222;  /* Darker text color */
+    background-color: #f5f5f5; /* Subtle gray background */
+    padding: 15px;
+    font-size: 24px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+/* Box for Description Text */
+.box {
+    width: 656px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin: 20px 0;
+    background-color: #f9f9f9;  /* Light gray background */
+    font-size: 16px;
+    padding: 20px;
+}
+
+/* Description Paragraphs */
+.p {
+    padding: 8px;
+    text-align: center;
+    line-height: 1.5;
+}
+
+/* Input Container Styling */
+.input-container {
+    margin: 20px 0;
+}
+
+input[type="number"] {
+    padding: 12px;
+    width: 90%;
+    max-width: 300px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    transition: border-color 0.3s ease;
+}
+
+input[type="number"]:focus {
+    border-color: #888; /* Subtle focus color */
+    background-color: #fafafa;
+}
+
+/* Button Styling */
+button {
+    cursor: pointer;
+    padding: 12px 24px;
+    font-size: 16px;
+    background-color: #4CAF50;  /* Clean green */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;  /* Slightly darker green on hover */
+}
+
+/* Cache Display Container */
+.cache-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+/* Individual Cache Boxes */
+.cache-box {
+    width: 70px;
+    height: 70px;
+    margin: 10px;
+    line-height: 70px;
+    text-align: center;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #fff; /* Neutral white background */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.cache-box:hover {
+    transform: scale(1.05);  /* Subtle zoom on hover */
+}
+
+/* Most Recently Used (MRU) Cache Box */
+.mru {
+    background-color: #4CAF50;  /* Clean green for MRU */
+    color: white;
+}
+
+/* Least Recently Used (LRU) Cache Box */
+.lru {
+    background-color: #f44336;  /* Red for LRU */
+    color: white;
+}
+
+/* Media Queries for Smaller Screens */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        margin-top: 40px;
+        padding: 25px;
+    }
+
+    .cache-box {
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+        font-size: 16px;
+    }
+
+    input {
+        width: 100%;
+    }
+
+    .put,
+    .put1 {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        margin-top: 20px;
+        padding: 20px;
+    }
+
+    .cache-box {
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        font-size: 14px;
+    }
+
+    input,
+    .put,
+    .put1 {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    button {
+        width: 100%;
+    }
+}
